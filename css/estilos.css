@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;800;900&family=Roboto:wght@100;300;500;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Roboto', sans-serif; 
+}
+    /*HEADER-NAVBAR*/
+    *{
+        box-sizing: border-box;
+    }
+    
+    html{
+        scroll-behavior: smooth;
+    }
+    
+    body{
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+    }
+    
+    h1{ font-size: 3.5em;}
+    h2{ font-size: 2.7em;}
+    h3{ font-size: 2em;}
+    p{ font-size: 1.25em;}
+    ul{ list-style: none;}
+    li{ font-size: 1.25em;}
+    
+    button{
+        font-size: 1.25em;
+        font-weight: bold;
+        padding: 10px 30px;
+        border-radius: 5px;
+        border: 2px solid rgba(0,0,0,0.3);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        color: white;
+        background-color: blueviolet;
+    }
+    
+    button:hover{
+        background-color: #edcb54;
+    }
+    
+    .container{
+        max-width: 1400px;
+        margin: auto;
+    }
+    
+    .color-acento{ color:#edcb54; }
+    
+    header{
+        background-color: #edcb54;
+        
+    }
+    
+    header .logo{
+        margin: 0;
+        padding: 25px 30px;
+        font-weight: bold;
+        color: #181818;
+        font-size: 1.6em;
+        font-family: 'Montserrat',  sans-serif cursive ;
+        font-weight: 900;
+    }
+    
+    header .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    header nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+    
+    header a{
+        padding: 5px 12px;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+    }
+    
+    header a:hover{
+        color: blueviolet;
+    }
+    
+.hero{
+    height: 83vh;
+    background-image: linear-gradient(rgba(16, 16, 16, .8), rgba(16, 16, 16, .9)) ,  url("./eco.jpg");
+    background-size: cover;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10 , 1fr);
+    grid-template-rows:repeat(8, 1fr) ;
+
+
+}
+
+.hero .info-content{
+    grid-column: 7 / 10;
+    grid-row: 3 / 7;
+    color: white;
+    height: 356px;
+    width: 563px;
+}
+
+.hero h3{
+    font-family:'Montserrat', sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+    color: white;
+}
+
+.hero h1{
+    font-size: 5em;
+    color: #edcb54;
+    font-weight: 900;
+}
+
+.hero p {
+    font-weight: 300;
+    font-family:'Montserrat', sans-serif;
+    color: white;
+}
+
+.hero .btn{
+    font-size: 1em;
+    background: none;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid #edcb54;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.hero .btn:hover{
+    background-color: white;
+    color: #edcb54;
+}
+/* SERVICIOS-EQUIPO*/
+.equipo{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.2rem;
+    align-items: center;
+    background-color: beige;
+ 
+}
+.equipo_contenedor{
+    display: flex;
+    flex: row;
+    padding: 1rem 1.2rem;
+    gap: 1rem;
+    font-family:'Montserrat', sans-serif; 
+}
+.equipo_titulogrande  {
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.8rem;  
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+    color:#181818;
+}
+
+
+.equipo_miembro img {
+    max-width: 100%;
+    border: 50px;
+    width: 20rem;
+    margin: auto;
+    object-fit: cover;
+    
+
+}
+.equipo_miembro{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.2rem;
+    margin: 1rem;
+    flex-basis: 100%;
+    justify-content: space-between;
+}
+
+.footer{
+    display: grid;
+    height: 80px;
+    align-items: center;
+    background-color: #181818;
+    color: white;
+    grid-template-areas:
+    "listen-online follow-me social-network";
+}
+ 
+.footer .listen-online{
+    grid-template-areas:listen-online;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    background-color: #edcb54;
+    padding: 19px;
+    color: #181818;
+}
+ 
+.footer  .listen-online .fas{
+     font-size: 1.5em;
+     margin-right: 15px;
+ }
+ .footer  .listen-online h2{
+     font-size: 0.8em;
+     font-weight: bold;
+     
+ }
+.footer .follow-me{
+    grid-area: follow-me;
+    text-align: center;
+    
+}
+.footer .follow-me h2{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #edcb54
+    
+}
+.footer.social-network{
+    grid-template-areas: social-network;
+    font-size: 1.3em;
+ 
+}
+ 
+.footer .social-network .fab{
+    margin-right: 15px;
+    color: #edcb54;
+ 
+}
+.footer .social-network .fab:hover{
+    color: white;
+}
+/* PAGE- PROYECTOS (RESPONSIVE)*/
+

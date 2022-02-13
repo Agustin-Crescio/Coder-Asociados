@@ -1,0 +1,25 @@
+@media only screen and (max-width:600px) {
+    
+
+/* section main*/
+
+.hero .info-content{
+    grid-column: 2 / 10;
+    grid-row: 5 /8 ;
+}
+
+.hero h1{
+    font-size: 3em;
+}
+
+/*SECTION FOOTER*/
+.footer .follow-me{
+     display: none;
+
+}
+
+.footer .social-network{
+    text-align: center;
+    
+}
+}
